@@ -1,0 +1,271 @@
+/* Global Body Styling */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f9;
+}
+
+/* App Container */
+.App {
+	font-family: 'Poppins', sans-serif;
+	padding: 20px;
+}
+
+/* Quiz Container */
+.quiz-container {
+	display: flex;
+	gap: 20px;
+	max-width: 1200px;
+	background-color: #fff;
+	margin: 40px auto;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Quiz Content */
+.quiz-content {
+	flex: 1;
+}
+
+.quiz-image {
+	flex: 1;
+	text-align: right;
+}
+
+.quiz-image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
+
+.quiz-question h3 {
+	font-size: 1.5rem;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+/* Options */
+.options button {
+	display: block;
+	width: 100%;
+	padding: 12px;
+	margin: 10px 0;
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	color: #333;
+	background: linear-gradient(135deg, #f7f5f5, #d0d0d0);
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s,
+		border-color 0.3s;
+}
+
+.options button:hover {
+	background: linear-gradient(135deg, #ffffff, #f0f0f0);
+	border-color: #444647;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.options button.correct {
+	background: #28a745;
+	border-color: #28a745;
+	color: #fff;
+}
+
+.options button.incorrect {
+	background: #dc3545;
+	border-color: #dc3545;
+	color: #fff;
+}
+
+/* Progress */
+.progress {
+	font-size: 1rem;
+	color: #666;
+	margin-top: 20px;
+}
+
+/* Registration Form */
+.registration-form {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border: 1px solid #e0e0e0;
+}
+
+.registration-form h2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5rem;
+	color: #333;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.registration-form input {
+	width: 94%;
+	padding: 12px;
+	margin: 10px 0;
+	font-size: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.registration-form input:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+	outline: none;
+}
+
+.registration-form button {
+	width: 100%;
+	padding: 12px;
+	margin-top: 20px;
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+	background-color: #007bff;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+.registration-form button:hover {
+	background-color: #0056b3;
+	transform: translateY(-2px);
+}
+
+.registration-form button:active {
+	transform: translateY(0);
+}
+
+/* Error Messages */
+.error {
+	color: red;
+	font-size: 0.9rem;
+	margin-top: 5px;
+}
+
+/* International Telephone Input */
+.intl-tel-input {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.intl-tel-input .selected-flag {
+	border-radius: 8px 0 0 8px;
+}
+
+.intl-tel-input input {
+	width: 100%;
+	padding: 12px;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.intl-tel-input input:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+	outline: none;
+}
+
+/* Submitted Data */
+.submitted-data {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Answer Card */
+.answer-card {
+	margin-bottom: 12px;
+	background: #fff;
+	padding: 16px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border: 1px solid #ddd;
+}
+
+.answer-card h4 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.answer-card ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.answer-card ul li {
+	font-size: 0.9rem;
+	padding: 5px 0;
+}
+
+.answer-card .correct {
+	color: green;
+	font-weight: bold;
+}
+
+.answer-card .incorrect {
+	color: red;
+	font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+	.quiz-container {
+		gap: 30px;
+	}
+
+	.quiz-question h3 {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+
+	.options button {
+		padding: 12px;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.quiz-container {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.quiz-image {
+		text-align: end;
+		order: 2;
+	}
+
+	.quiz-content {
+		order: 1;
+	}
+
+	.quiz-question h3 {
+		font-size: 1.2rem;
+	}
+
+	.options button {
+		padding: 10px;
+		font-size: 0.9rem;
+	}
+
+	.quiz-image img {
+		max-width: 80%;
+	}
+}
